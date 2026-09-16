@@ -8,6 +8,13 @@
 
 body {
     background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
 }
 
 header {
@@ -111,12 +118,24 @@ button:active {
     scale: 0.9;
 }
 
+.rodape {
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.rodape span:hover {
+    color: #AEC346;
+    font-weight: bold;
+}
+
 
 @media (max-width: 768px) {
     img {
         width: 283px;
         height: auto;
-        margin: 156px auto 40px;
+        margin: 90px auto 40px
     }
 
     h1 {
@@ -140,6 +159,5 @@ button:active {
         font-size: 18px;
         margin-top: 55px;
     }
-
 
 }
